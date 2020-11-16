@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <div class="d-flex justify-content-center">
+            <div class="row">
+                <div class="col-3">
+                    <img src="public/logo.png" class="rounded-circle" alt="Logo" width="69" height="69">
+                </div>
+                <div class="col-9">
+                    <h1>Smart Parking</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <p>Choisissez votre ville :</p>
+    </div>
+    <div class="d-flex justify-content-center">
+        <button id="Button_Lille" class="btn btn-secondary">Lille</button>
+        <button id="Button_Paris" class="btn btn-secondary">Paris</button>
+        <button id="Button_Lyon" class="btn btn-secondary">Lyon</button>
+        <button id="Button_Tokyo" class="btn btn-secondary">Tokyo</button>
+        <button id="Button_Valenciennes" class="btn btn-secondary">Valenciennes</button>
+        <button id="Button_Marseille" class="btn btn-secondary">Marseille</button>
+        <button id="Button_Toulouse" class="btn btn-secondary">Toulouse</button>
+        <button id="Button_NY" class="btn btn-secondary">New York</button>
+    </div>
+    <br></br>
+    <div class="d-flex justify-content-center">
+    <button id="Button_About" class="btn btn-info">About us</button>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("Button_About").onclick = function () {
+            location.href = "about.html";
+        };
+        document.getElementById("Button_Lille").onclick = function () {
+            location.href = "ville/Lille.html";
+        };
+    </script>
+</body>
+
+</html>
